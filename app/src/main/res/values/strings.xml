@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Event Search</string>
+    <string name="input_event_location">Input Event Location</string>
+    <string name="find_events">Find Events</string>
 </resources>

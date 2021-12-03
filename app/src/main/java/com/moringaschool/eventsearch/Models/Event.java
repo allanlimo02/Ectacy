@@ -1,10 +1,9 @@
 
-package com.moringaschool.rubisevents.Models;
+package com.moringaschool.eventsearch.Models;
 
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import com.moringaschool.rubisevents.Models.Location;
 
 @Generated("jsonschema2pojo")
 public class Event {
@@ -17,10 +16,10 @@ public class Event {
     private String category;
     @SerializedName("cost")
     @Expose
-    private Object cost;
+    private Double cost;
     @SerializedName("cost_max")
     @Expose
-    private Object costMax;
+    private Double costMax;
     @SerializedName("description")
     @Expose
     private String description;
@@ -100,7 +99,7 @@ public class Event {
      * @param category
      * @param longitude
      */
-    public Event(Integer attendingCount, String category, Object cost, Object costMax, String description, String eventSiteUrl, String id, String imageUrl, Integer interestedCount, Boolean isCanceled, Boolean isFree, Boolean isOfficial, Double latitude, Double longitude, String name, String ticketsUrl, String timeEnd, String timeStart, Location location, String businessId) {
+    public Event(Integer attendingCount, String category, Double cost, Double costMax, String description, String eventSiteUrl, String id, String imageUrl, Integer interestedCount, Boolean isCanceled, Boolean isFree, Boolean isOfficial, Double latitude, Double longitude, String name, String ticketsUrl, String timeEnd, String timeStart, Location location, String businessId) {
         super();
         this.attendingCount = attendingCount;
         this.category = category;
@@ -140,19 +139,13 @@ public class Event {
         this.category = category;
     }
 
-    public Object getCost() {
-        return cost;
-    }
+    public Double getCost() {return cost; }
 
-    public void setCost(Object cost) {
-        this.cost = cost;
-    }
+    public void setCost(Double cost) {this.cost = cost;}
 
-    public Object getCostMax() {
-        return costMax;
-    }
+    public Double getCostMax() {return costMax;}
 
-    public void setCostMax(Object costMax) {
+    public void setCostMax(Double costMax) {
         this.costMax = costMax;
     }
 

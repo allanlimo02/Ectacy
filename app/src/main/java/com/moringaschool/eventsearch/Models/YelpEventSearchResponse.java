@@ -1,5 +1,5 @@
 
-package com.moringaschool.rubisevents.Models;
+package com.moringaschool.eventsearch.Models;
 
 import java.util.List;
 import javax.annotation.Generated;
@@ -28,7 +28,7 @@ public class YelpEventSearchResponse {
      * @param total
      * @param events
      */
-    public YelpEventSearchResponse(Integer total, List<com.moringaschool.rubisevents.Models.Event> events) {
+    public YelpEventSearchResponse(Integer total, List<Event> events) {
         super();
         this.total = total;
         this.events = events;

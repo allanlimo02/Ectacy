@@ -1,5 +1,5 @@
 
-package com.moringaschool.rubisevents.Models;
+package com.moringaschool.eventsearch.Models;
 
 import java.util.List;
 import javax.annotation.Generated;
